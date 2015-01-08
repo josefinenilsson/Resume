@@ -1,0 +1,63 @@
+.terminal {
+    display: block;
+    position: relative;
+    max-width: 800px;
+    width: 95%;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 16, 34, 0.9);
+    font-family: $font-monospace;
+    font-weight: bold;
+    @include font-size(16);
+    padding: 25px 30px;
+    color: white;
+    
+    /* Top bar
+    --------------- */
+    border-top: 20px solid $light-blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    #writing {
+        span {
+            display: none;
+        }
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    
+    .comment {
+        color: $light-blue;
+    }
+    
+    #contact-info {
+        display: none;
+    }
+    
+    #last {
+        display: none;
+    }
+
+}
+
+.animated {
+    &.blinking {
+        @include animation(1s blinking step-end infinite);
+    }
+}
+
+@include keyframes(blinking){
+    from,to {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+}

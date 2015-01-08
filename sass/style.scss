@@ -1,0 +1,48 @@
+/* IMPORT
+---------------
+Importing compass and reset stylesheets and mixins.
+--------------- */
+
+@import "compass/reset";
+@import "compass/css3";
+@include global-reset;
+@import "helpers/_mixins";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+/* VARIABLES
+---------------
+Setting up the variables. Default fonts, colors, widths and breakpoints.
+--------------- */
+
+$font: "Ubuntu", Helvetica, "Helvetica Neue", Arial, sans-serif;
+$font-heading: $font;
+$font-monospace: "Ubuntu Mono", Consolas, "Droid Sans Mono", "Courier New";
+$blue: #01164c;
+$dark-blue: darken($blue, 10%);
+$light-blue: #7A87A8;
+
+$wrapper-width: 600px;
+$laptop-width: 1000px;
+$desktop-width: 1400px;
+$site-width: 800px;
+$tablet-width: 550px;
+$mobile-width: 400px;
+$gutter: 20px;
+
+/* BASE STYLES
+---------------
+Setting up the base-layout and formatting for elements.
+--------------- */
+
+@import "helpers/_helpers";
+@import "layout/_base";
+@import "layout/_grid";
+@import "layout/_header";
+@import "layout/_footer";
+@import "base/_typography";
+@import "components/_experience";
+@import "components/_timeline";
+@import "components/_terminal";
+@import "components/_desktop";

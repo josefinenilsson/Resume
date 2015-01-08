@@ -1,0 +1,19 @@
+.title, .sub-title {
+    font-family: $font;
+    margin: {
+        bottom: 0.5em;
+    };
+}
+
+h1 {
+    @include font-size(40);
+}
+
+h2 {
+    @include font-size(32);
+}
+
+.sub-title {
+    @include font-size(21);
+    color: $light-blue;
+}

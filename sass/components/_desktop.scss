@@ -1,0 +1,30 @@
+.desktop-icons {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    position: absolute;
+    width: 400px;
+    max-width: 80%;
+    top: 50px;
+    left: 40px;
+    opacity: 0.1;
+    .desktop-icon {
+        width: 100px;
+        margin-bottom: 25px;
+        img {
+            display: block;
+            width: 60px;
+            height: auto;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+        p {
+            margin-top: 5px;
+            color: white;
+            text-align: center;
+            
+        }
+    }
+}

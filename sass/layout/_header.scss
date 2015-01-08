@@ -1,0 +1,40 @@
+.header {
+    background: url("../img/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $light-blue;
+        }
+    }
+    .section {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        };
+        color: white;
+        &.dark {
+            background: rgba(0,16,34,0.3);
+            padding: {
+                top: 40px;
+                bottom: 40px;
+            };
+        }
+    }
+    
+    .title, .sub-title {
+        display: block;
+        text-align: center;
+    }
+    .title {
+        font-weight: bold;
+    }
+    
+    .contact-info:not(:last-child) {
+        padding-right: 40px;
+    }
+}
+

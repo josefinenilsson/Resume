@@ -1,0 +1,25 @@
+.flex {
+    @include flexbox();
+}
+
+.row {
+    @include flex-direction(row);
+}
+.column {
+    @include flex-direction(column);
+}
+
+.weight-1 {
+    @include flex(1);
+}
+
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+
+bold {
+    font-weight: bold;
+}

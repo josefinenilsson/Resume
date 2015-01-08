@@ -1,0 +1,14 @@
+.flex {
+    @include flexbox();
+}
+
+.row {
+    @include flex-direction(row);
+}
+.column {
+    @include flex-direction(column);
+}
+
+.weight-1 {
+    @include flex(1);
+}
