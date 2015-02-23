@@ -1,7 +1,6 @@
 .projects {
     @include flexbox();
     @include flex-direction(column);
-    width: 110%;
     .project-item {
         @include flexbox();
         @include flex-direction(row);
@@ -29,6 +28,19 @@
             img {
                 width: 100%;
                 height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .projects {
+        .project-item {
+            @include flex-direction(column);
+            margin-bottom: 40px;
+            .image {
+                width: 100%;
+                margin-top: 10px;
             }
         }
     }
