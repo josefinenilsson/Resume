@@ -4,6 +4,13 @@
         bottom: 60px;
     };
     color: $dark-blue;
+    a {
+        color: $light-blue;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     &.dark {
         background: $blue;
         color: white;
