@@ -2,3 +2,5 @@
 node_modules
 .sass-cache
 Gustav-Lindqvist_2014-10-04_0094.psd
+*.idlk
+.DS_Store
