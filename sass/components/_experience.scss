@@ -1,9 +1,10 @@
 .experience {
     display: table;
-    @include font-size(16);
+    @include font-size(14);
     .experience-item {
         display: table-row;
         .date {
+            @include font-size(16);
             display: table-cell;
             font-family: $font-monospace;
             white-space: nowrap;
@@ -15,6 +16,8 @@
             padding-bottom: 20px;
             .position {
                 font-weight: 700;
+                @include font-size(16);
+                margin-bottom: 0;
                 .secondary {
                     //color: $light-blue;
                     font-weight: normal;
@@ -22,8 +25,9 @@
             }
             .location {
                 font-family: $font-monospace;
+                margin-bottom: 0;
                 a {
-                    color: white;
+                    color: $light-blue;
                     text-decoration: none;
                     &:hover {
                         text-decoration: underline;
@@ -31,13 +35,37 @@
                 }
             }
             .description {
-                color: $light-blue;
+                color: $blue;
                 a {
-                    color: $light-blue;
+                    color: $blue;
                     text-decoration: underline;
                     &:hover {
-                        color: white;
+                        color: $light-blue;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experience {
+        display: block;
+        .experience-item {
+            display: block;
+            position: relative;
+            .date {
+                display: block;
+                text-align: left;
+                position: absolute;
+                top: 1px;
+                right: 0;
+            }
+            .content {
+                display: block;
+                .position {
+                    width: 80%;
+                    width: calc(100% - 100px);
                 }
             }
         }

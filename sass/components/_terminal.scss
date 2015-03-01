@@ -18,6 +18,10 @@
     border-top: 20px solid $light-blue;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    
+    p {
+        margin-bottom: 0;
+    }
     #writing {
         span {
             display: none;
@@ -44,7 +48,6 @@
     #last {
         display: none;
     }
-
 }
 
 .animated {
