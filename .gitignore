@@ -4,3 +4,5 @@ node_modules
 Gustav-Lindqvist_2014-10-04_0094.psd
 *.idlk
 .DS_Store
+*.db
+img/Thumbs.db
