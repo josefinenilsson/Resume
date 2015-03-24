@@ -45,6 +45,11 @@
                 }
             }
         }
+        &:last-child {
+            .content {
+                padding-bottom: 0;
+            }
+        }
     }
 }
 

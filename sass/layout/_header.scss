@@ -13,7 +13,7 @@
     .section {
         padding: {
             top: 100px;
-            bottom: 100px;
+            bottom: 60px;
         };
         color: white;
         background: none;
@@ -24,6 +24,15 @@
                 bottom: 40px;
             };
         }
+    }
+    
+    .avatar {
+        display: block;
+        width: 100px;
+        max-width: 30%;
+        height: auto;
+        border-radius: 50%;
+        margin: 0 auto 20px auto;
     }
     
     .title, .sub-title {
@@ -38,4 +47,3 @@
         padding-right: 40px;
     }
 }
-
